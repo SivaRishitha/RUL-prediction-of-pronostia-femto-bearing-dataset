@@ -5,6 +5,11 @@ Pronostia femto bearing dataset provides run-to-failure (RTF) data for bearings 
 ## table of contents
 
 - [Overview of dataset](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#overview-of-dataset)
+- [Objective](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#objective)
+- [Exploratory Data Analysis](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#exploratory-data-analysis)
+- [Training model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#training-model)
+- [Evaluating model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#evaluating-model)
+  
 
 ## Overview of dataset
 
@@ -27,6 +32,43 @@ Finding RMSE between ground truth and predicted values of RUL.
 Evaluating the performance of the trained model.
 
 ## Exploratory Data Analysis(EDA)
+
+![image alt](https://github.com/user-attachments/assets/326f124e-9955-454d-a16c-a7b1070df8e9)
+From the plots, we can clearly observe that torque is not showing any trend due to an outlier. So we can fix a threshold for the torque and we can replace the values outside that threshold with the mean of the data points. We can directly eliminate mean of x and y and standard deviation as rms and standard deviation are same here.
+
+![image alt](https://github.com/user-attachments/assets/bf74ea1d-1397-458b-bba4-814f0b925911)
+Even after setting the threshold as µ + 3α and µ - 3α (where µ is mean and α is standard deviation of data points), we were not able to observe any trend. So we removed torque from our features.
+
+![image alt](https://github.com/user-attachments/assets/1d97a0d6-3a4c-4642-ab45-c7388c701c71)
+we took magnitude of vibration from x axis and y axis as a single variable and extracted features from it. Here we can take all 4 except standard deviation since it is same as rms. 
+
+## Training model
+
+Now we are ready with our features. We trained linear regression, exponential regression, SVR (support vector regression) and random forest regression models with our features. We have trained 3 different models of each type for each operating condition and tested with their respective test datasets.
+After testing, we got our RMSE as 163.47 with random forest model which is comparatively lesser when tested with the other models.
+
+## Evaluating model
+
+![image alt](https://github.com/user-attachments/assets/e1b44139-c30e-46a5-90a3-639e528666b1)
+For bearing1_3, every predicted RUL aligns with the actual RUL in the same interval. 
+•	A predicted RUL of 1200-1300 matches an actual RUL in the same range.
+•	A predicted RUL of 700-800 matches an actual RUL in the same range.
+This is a highly accurate result, as there are no off-diagonal entries.
+
+![image alt](https://github.com/user-attachments/assets/28480880-81b2-4b3f-a229-28f018f3db26)
+
+some predictions don’t align perfectly with the actual RUL intervals.
+A predicted RUL in the interval 0-100 matches the actual RUL in both 100-200 and 300-400, suggesting underestimation in some cases.
+
+![image alt](https://github.com/user-attachments/assets/536b527a-71de-4ec9-8d7f-06f79bd6b075)
+
+The model overestimates RUL in several instances, as indicated by off-diagonal values.
+
+
+
+
+
+
 
 
 
