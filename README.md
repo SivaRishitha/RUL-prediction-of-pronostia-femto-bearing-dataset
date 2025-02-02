@@ -2,7 +2,7 @@
 
 Pronostia femto bearing dataset provides run-to-failure (RTF) data for bearings under different operating conditions, allowing researchers to develop models for bearing failure prediction.
 
-## table of contents
+## Table of contents
 
 - [Overview of dataset](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#overview-of-dataset)
 - [Objective](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#objective)
