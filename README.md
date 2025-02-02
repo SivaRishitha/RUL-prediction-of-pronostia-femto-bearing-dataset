@@ -4,14 +4,13 @@ Pronostia femto bearing dataset provides run-to-failure (RTF) data for bearings 
 
 ## Table of contents
 
-- [Overview of dataset](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#overview-of-dataset)
-- [Objective](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#objective)
-- [Exploratory Data Analysis](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#exploratory-data-analysis)
-- [Training model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#training-model)
-- [Evaluating model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#evaluating-model)
-- [google collab link](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#code-link)
+- [Overview of dataset](#overviewofdataset)
+- [Objective](#objective) 
+- [Exploratory Data Analysis](#exploratorydataanalysis)
+- [Training model](#trainingmodel)
+- [Evaluating model](#evaluatingmodel)
+- [Google collab link](googlecollablink)
   
-
 ## Overview of dataset
 
 Dataset 4 consists of a total of 9 distinct bearings, each tested until the end of its
