@@ -9,6 +9,7 @@ Pronostia femto bearing dataset provides run-to-failure (RTF) data for bearings 
 - [Exploratory Data Analysis](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#exploratory-data-analysis)
 - [Training model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#training-model)
 - [Evaluating model](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#evaluating-model)
+- [google collab link](https://github.com/SivaRishitha/RUL-prediction-of-pronostia-femto-bearing-dataset/edit/main/README.md#code-link)
   
 
 ## Overview of dataset
@@ -63,6 +64,9 @@ A predicted RUL in the interval 0-100 matches the actual RUL in both 100-200 and
 ![image alt](https://github.com/user-attachments/assets/536b527a-71de-4ec9-8d7f-06f79bd6b075)
 
 The model overestimates RUL in several instances, as indicated by off-diagonal values.
+
+## code link
+[collab](https://colab.research.google.com/drive/121OSoOSrhK0aUwADHSujnK00W2lJ0Jwh?usp=sharing)
 
 
 
